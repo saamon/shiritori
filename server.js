@@ -6,7 +6,11 @@ import { serve } from "https://deno.land/std@0.138.0/http/server.ts";
 
 import { serveDir } from "https://deno.land/std@0.138.0/http/file_server.ts";
 
-let previousWord = "しりとり";
+// 前の単語を保持する変数
+// 初期値をランダムで決める
+const words = ["あんこ", "いちご", "うめ", "えび", "おおかみ"];
+const random = Math.floor(Math.random() * words.length);
+let previousWord = words[random];
 
 console.log("Listening on http://localhost:8000");
 

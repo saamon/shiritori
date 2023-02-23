@@ -1,3 +1,23 @@
+/*全体を中央寄せにする*/
 body {
   background-color: skyblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p,
+input,
+button {
+  margin: 10px 0;
+}
+
+input {
+  width: 220px;
 }
